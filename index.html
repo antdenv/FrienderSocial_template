@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friender</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/2c4f347c84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER NAVBAR -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">Friender</h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Поиск">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Создать</label>
+                <div class="profile-picture">
+                    <img src="./images/profile-1.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN SECTION -->
+    <main>
+        <div class="container">
+            <!-- LEFT SECTION -->
+            <div class="left">
+                <!-- PROFILE CARD -->
+                <a href="#" class="profile">
+                    <div class="profile-picture">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Настя Денисова</h4>
+                        <p class="text-muted">
+                            @antdenv
+                        </p>
+                    </div>
+                </a>
+
+                <!-- SIDEBAR -->
+                <div class="sidebar">
+                    <a href="#" class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span><h3>Новости</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-user-group"></i></span><h3>Друзья</h3>
+                    </a>
+                    <a href="#" class="menu-item" id="messages-notifications">
+                        <span><i class="fa-solid fa-envelope"><small class="notification-count">6</small></i></span><h3>Сообщения</h3>
+                    </a>
+                    <a href="#" class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span><h3>Уведомления</h3>
+                        <!-- Notification Popup -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Настя Денисова</b> хочет добавить Вас в друзья
+                                    <small class="text-muted">2 ДНЯ НАЗАД</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END NOTIFICATION POPUP -->
+                    </a>
+                    <a href="#" class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span><h3>Тема</h3>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i></span><h3>Настройки</h3>
+                    </a>
+                </div>
+                <!-- END OF SIDEBAR -->
+                <label for="create-post" class="btn btn-primary">Создать пост</label>
+            </div>
+
+            <!-- MIDDLE SECTION -->
+            <div class="middle">
+                <!-- STORIES -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <p class="name">Ваша история</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-9.jpg">
+                        </div>
+                        <p class="name">Имя Фамилия</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-10.jpg">
+                        </div>
+                        <p class="name">Имя Фамилия</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <p class="name">Имя Фамилия</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-12.jpg">
+                        </div>
+                        <p class="name">Имя Фамилия</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="./images/profile-13.jpg">
+                        </div>
+                        <p class="name">Имя Фамилия</p>
+                    </div>
+                </div>
+                <!-- END OF STORIES -->
+
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="Расскажите, что у Вас произошло нового?" id="create-post">
+                    <input type="submit" value="Создать" class="btn btn-primary">
+                </form>
+
+                <!-- FEEDS -->
+                <div class="feeds">
+                    <!-- FEED #1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                    <!-- FEED #2 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                    <!-- FEED #3 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                    <!-- FEED #4 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                    <!-- FEED #5 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                    <!-- FEED #6 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="./images/profile-10.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Имя Фамилия</h3>
+                                    <small>Москва, 15 минут назад</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+
+                        <div class="interaction-buttons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-regular fa-comment"></i></span>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-15.jpg"></span>
+                            <span><img src="./images/profile-4.jpg"></span>
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <p>Понравилось <b>Насте Денисовой</b> и еще 32 другим</p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Имя Фамилия</b> текст текст текст текст текст текст</p>
+                        </div>
+
+                        <div class="comments text-muted">
+                            Посмотреть все 10 комментов
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SECTION -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Сообщения</h4>
+                        <span><i class="fa-regular fa-pen-to-square"></i></span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Поиск сообщений" id="message-search">
+                    </div>
+
+                    <!-- Messages category -->
+                    <div class="category">
+                        <h6 class="active">Новые</h6>
+                        <h6>Все</h6>
+                        <h6 class="message-requests">Запросы(7)</h6>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/profile-16.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="user-name">Настя Денисова</h5>
+                            <p class="text-bold">2 новых сообщения</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/profile-17.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="user-name">Аня Денисова</h5>
+                            <p class="text-bold">3 новых сообщения</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/profile-18.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="user-name">Ваня Рыбников</h5>
+                            <p class="text-bold">4 новых сообщения</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./images/profile-19.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="user-name">Катя Адушкина</h5>
+                            <p class="text-bold">2 новых сообщения</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Friend Request -->
+                <div class="friend-requests">
+                    <h4>Запросы</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/profile-19.jpg">
+                            </div>
+                            <div>
+                                <h5>Имя Фамилия</h5>
+                                <p class="text-muted">8 общих друзей</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Принять</button>
+                            <button class="btn">Отклонить</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/profile-18.jpg">
+                            </div>
+                            <div>
+                                <h5>Имя Фамилия</h5>
+                                <p class="text-muted">0 общих друзей</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Принять</button>
+                            <button class="btn">Отклонить</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/profile-17.jpg">
+                            </div>
+                            <div>
+                                <h5>Имя Фамилия</h5>
+                                <p class="text-muted">2 общих друзей</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Принять</button>
+                            <button class="btn">Отклонить</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./images/profile-16.jpg">
+                            </div>
+                            <div>
+                                <h5>Имя Фамилия</h5>
+                                <p class="text-muted">5 общих друзей</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Принять</button>
+                            <button class="btn">Отклонить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- THEME CUSTOMIZATION -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Редактирование оформления страницы</h2>
+            <p class="text-muted">Измените размер шрифта, цвет и фон.</p>
+
+            <!-- FONT SIZES -->
+            <div class="font-size">
+                <h4>Размер шрифта</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- PRIMARY COLORS -->
+            <div class="color">
+                <h4>Цвет</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!-- BACKGROUND COLORS -->
+            <div class="background">
+                <h4>Фон</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Светлый</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Темный</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Черный</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
